@@ -236,7 +236,7 @@ spec:
       - name: STORAGE_DRIVER
         value: overlay
       - name: ADD_CAPABILITIES
-        value: SYS_ADMIN
+        value: CAP_SYS_ADMIN
       runAfter:
       - prefetch-dependencies
       taskRef:
