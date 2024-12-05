@@ -234,7 +234,7 @@ spec:
       - name: BUILD_ARGS_FILE
         value: $(params.build-args-file)
       - name: STORAGE_DRIVER
-        value: fuse-overlayfs
+        value: overlay
       runAfter:
       - prefetch-dependencies
       taskRef:
