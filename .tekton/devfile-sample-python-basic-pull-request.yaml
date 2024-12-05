@@ -235,6 +235,8 @@ spec:
         value: $(params.build-args-file)
       - name: STORAGE_DRIVER
         value: overlay
+      - name: ADD_CAPABILITIES
+        value: SYS_ADMIN
       runAfter:
       - prefetch-dependencies
       taskRef:
