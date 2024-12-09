@@ -236,7 +236,7 @@ spec:
       - name: STORAGE_DRIVER
         value: overlay
       - name: ADD_CAPABILITIES
-        value: "SYS_ADMIN,SETUID,SETGID,MKNOD,SYS_CHROOT,SETFCAP"
+        value: "SYS_ADMIN"
       runAfter:
       - prefetch-dependencies
       taskRef:
@@ -244,7 +244,7 @@ spec:
         - name: name
           value: buildah
         - name: bundle
-          value: quay.io/zxiong/task-buildah@sha256:4c65495f6ba16f91f579708938870ab76385e37f9ba78b4490de2995ef8ff16e
+          value: quay.io/zxiong/task-buildah@sha256:0df418d7d8de3319c2141b65f3fbd312fb9230d9cc379d46997444c5fe216550
         - name: kind
           value: task
         resolver: bundles
