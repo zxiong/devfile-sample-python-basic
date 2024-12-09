@@ -120,11 +120,11 @@ spec:
       name: build-image-index
       type: string
     - default: []
-      description: Array of --build-arg values ("arg=value" strings) for buildah
+      description: Array of --build-arg values ("arg=value" strings) for 
       name: build-args
       type: array
     - default: ""
-      description: Path to a file with build arguments for buildah, see https://www.mankier.com/1/buildah-build#--build-arg-file
+      description: Path to a file with build arguments for , see https://www.mankier.com/1/-build#--build-arg-file
       name: build-args-file
       type: string
     results:
@@ -244,7 +244,7 @@ spec:
         - name: name
           value: buildah
         - name: bundle
-          value: quay.io/konflux-ci/tekton-catalog/task-buildah:0.2@sha256:aebfe04c80f7fd937628fad760c095c6a0efacb048f2c98e5d5e7f2b0f134cf9
+          value: quay.io/zxiong/task-buildah@sha256:8a04c31dbdf99af4ad33d28ea4f827ebae9cbaeaa0d4aac919d5d02924429f92
         - name: kind
           value: task
         resolver: bundles
