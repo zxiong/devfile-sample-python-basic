@@ -244,7 +244,7 @@ spec:
         - name: name
           value: buildah
         - name: bundle
-          value: quay.io/zxiong/task-buildah@sha256:31aeaae70a34d6a769c541c788178492eb6c2f979c5646852fc9162807558393
+          value: quay.io/zxiong/task-buildah@sha256:377cfbc7b62c4bac78eca3c3db0f886d8d7df30d1b9ff660d1c5db8a718c833e
         - name: kind
           value: task
         resolver: bundles
