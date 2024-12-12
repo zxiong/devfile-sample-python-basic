@@ -27,7 +27,9 @@ spec:
   - name: image-expires-after
     value: 5d
   - name: dockerfile
-    value: docker/Dockerfile
+    value: docker/Dockerfile.10m10
+  - name: STORAGE_DRIVER
+    value: overlay
   pipelineSpec:
     description: |
       This pipeline is ideal for building container images from a Containerfile while reducing network traffic.
@@ -240,7 +242,7 @@ spec:
         - name: name
           value: buildah
         - name: bundle
-          value: quay.io/konflux-ci/tekton-catalog/task-buildah:0.2@sha256:ae8dcd146ac80f5b3f9fece916b5125417fc7db1b37ec176068f9cd0801cebfb
+          value: quay.io/zxiong/task-buildah@sha256:00d9dff50571c9dfae0400c0dd1a3a445f7bc3ca1555cace5d9e4c39fb50bede
         - name: kind
           value: task
         resolver: bundles
