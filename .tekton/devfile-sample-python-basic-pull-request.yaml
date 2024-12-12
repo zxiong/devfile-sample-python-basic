@@ -44,7 +44,7 @@ spec:
         - name: name
           value: show-sbom
         - name: bundle
-          value: quay.io/zxiong/task-buildah@sha256:08f1945d81d116a3c8683f6e6e89671b0245add4a074f280da5594a3a0e1f889
+          value: quay.io/konflux-ci/tekton-catalog/task-show-sbom:0.1@sha256:7f8b5499a21de9aca718d0cf2e170949af6b30cacf882d64983471a2c673b1da
         - name: kind
           value: task
         resolver: bundles
@@ -244,7 +244,7 @@ spec:
         - name: name
           value: buildah
         - name: bundle
-          value: quay.io/zxiong/task-buildah@sha256:204cbc2a2c6f9a34fb20e8d42bf6abc6b00d31f57a4e1c459cf0ed7d69a8aec4
+          value: quay.io/zxiong/task-buildah@sha256:08f1945d81d116a3c8683f6e6e89671b0245add4a074f280da5594a3a0e1f889
         - name: kind
           value: task
         resolver: bundles
