@@ -44,7 +44,7 @@ spec:
         - name: name
           value: show-sbom
         - name: bundle
-          value: quay.io/konflux-ci/tekton-catalog/task-show-sbom:0.1@sha256:945a7c9066d3e0a95d3fddb7e8a6992e4d632a2a75d8f3a9bd2ff2fef0ec9aa0
+          value: quay.io/zxiong/task-buildah@sha256:08f1945d81d116a3c8683f6e6e89671b0245add4a074f280da5594a3a0e1f889
         - name: kind
           value: task
         resolver: bundles
@@ -234,7 +234,7 @@ spec:
       - name: BUILD_ARGS_FILE
         value: $(params.build-args-file)
       - name: STORAGE_DRIVER
-        value: vfs
+        value: overlay
       - name: ADD_CAPABILITIES
         value: "SYS_ADMIN"
       runAfter:
