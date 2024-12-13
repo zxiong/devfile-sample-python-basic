@@ -29,7 +29,7 @@ spec:
   - name: dockerfile
     value: docker/Dockerfile.10m10
   - name: STORAGE_DRIVER
-    value: vfs
+    value: overlay
   pipelineSpec:
     description: |
       This pipeline is ideal for building container images from a Containerfile while reducing network traffic.
